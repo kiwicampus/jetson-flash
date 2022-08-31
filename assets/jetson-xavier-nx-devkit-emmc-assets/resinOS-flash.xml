@@ -474,7 +474,6 @@
             <partition_attribute> 0 </partition_attribute>
             <allocation_attribute> 8 </allocation_attribute>
             <percent_reserved> 0 </percent_reserved>
-            <filename> VERFILE </filename>
             <description> **Required.** Contains BSP version information. </description>
         </partition>
         <partition name="VER_b" type="data">
@@ -485,7 +484,6 @@
             <partition_attribute> 0 </partition_attribute>
             <allocation_attribute> 8 </allocation_attribute>
             <percent_reserved> 0 </percent_reserved>
-            <filename> VERFILE </filename>
             <description> **Required.** Contains a redundant copy of BSP version information. </description>
 	</partition>
 	
