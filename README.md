@@ -9,14 +9,14 @@ This tool is separate into two parts:
 Balena devices support
 ---------------------
 
-* Jetson NANO eMMC (L4T 32.6.1)
-* Jetson Nano SD-CARD Devkit (L4T 32.6.1)
-* Jetson Nano 2GB Devkit (L4T 32.5.1)
-* Jetson TX2 (L4T 32.5.1)
-* Jetson TX2 NX (in Jetson Xavier NX Devkit, L4T 32.6.1)
-* Jetson Xavier AGX (L4T 32.5.1)
-* Jetson Xavier NX Devkit eMMC (L4T 32.5.1)
-* Jetson Xavier NX Devkit SD-CARD (L4T 32.5.1)
+* Jetson Nano eMMC - L4T 32.7.1
+* Jetson Nano SD-CARD Devkit - L4T 32.7.1
+* Jetson Nano 2GB Devkit - L4T 32.7.1
+* Jetson TX2 - L4T 32.7.1
+* Jetson TX2 NX (in Jetson Xavier NX Devkit) - L4T 32.7.1
+* Jetson Xavier AGX - L4T 32.7.1
+* Jetson Xavier NX Devkit eMMC - L4T 32.7.1
+* Jetson Xavier NX Devkit SD-CARD - L4T 32.7.1
 
 WARNINGS
 --------
@@ -51,8 +51,7 @@ NOTES:
  - Running the Tegra flash tool requires sudo priviliges
  - This tool will produce all intermidiate steps in `/tmp/${pid_of_process}` and will require sudo priviliges to delete
  - If flashing Jetson TX2 with a BalenaOS image older than 2.47, please checkout tag 'v0.3.0'. BalenaOS 2.47 updated L4T version from 28.3 to 32.4.2.
- - Current BSP version used for flashing is L4T 32.6.1 for jetson-nano, jetson-nano-emmc and jetson-xavier-nx-devkit-tx2-nx - for the TX2 NX. Other devices are based on 32.5.1, please ensure the BalenaOS version you are flashing uses the same L4T, by consulting the changelog. v0.5.10 should be used for flashing devices on L4T 32.4.4.
-   available in the [BalenaOS Jetson](https://github.com/balena-os/balena-jetson/commits/master) repository.
+ - Current BSP version used for flashing each device type is mentioned in the "Balena devices support" section above. Please ensure the balenaOS version you are flashing uses the same L4T, by consulting the changelog available in the [BalenaOS Jetson repository](https://github.com/balena-os/balena-jetson/commits/master). Jetson Flash v0.5.10 should be used for flashing devices on L4T 32.4.4.
 
 Clone this repository
 ```sh
@@ -70,6 +69,30 @@ Support
 -------
 
 If you're having any problems, please [raise an issue](https://github.com/balena-os/jetson-flash/issues/new) on GitHub and the balena.io team will be happy to help.
+
+Submitting changes
+------------------
+
+Changes can be submitted in form of PRs to this repository, each PR may include multiple commits.
+
+The header of each commit must not exceed 72 characters in length and must be in 1 line only.
+
+The header and the subject of each commit must be separated by an empty line.
+
+The subject of each commit must not exceed 72 characters per line and can be wrapped to several lines.
+
+The subject and the footer of each commit must be separated by an empty line.
+
+Every pull request must contain at least one commit annotated with the Change-type footer, and all commits should include a Signed-off-by.
+
+An example of a valid commit is:
+
+```
+Update Xavier AGX to L4T 32.7.1
+
+Change-type: patch
+Signed-off-by: Name <user@email.com>
+```
 
 License
 -------
